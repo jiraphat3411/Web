@@ -1,0 +1,72 @@
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลงทะเบียนหนังสือรุ่น</title>
+    <style>
+        table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        }
+        th, td { padding: 15px;}
+    </style>
+</head>
+<body>
+    <form method=”post” action=”test.php” name=”myForm”>
+        <table>
+            <tr>
+                <th colspan="2"> ข้อมูลส่วนตัว </th>
+            </tr>
+            <tr>
+                <td rowspan="5"><img src="https://i.pinimg.com/originals/9a/a8/8b/9aa88be3a15f26e0831e8a999bbea8e7.gif"width = "180" alt="650710533"> </td>
+                <td >
+                    First Name : <input type="text" name="firstname">
+                    Last Name : <input type="text" name="lastname">
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    Nick Name : <input type="text" name="nickname">
+                    Age : <input type="text" name="age">
+                </td>
+            </tr>
+            <tr>
+                <td > 
+                    กรุ๊ปเลือด
+                        <select name="product">
+                            <option value="unknow">-</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="AB">AB</option>
+                            <option value="O">O</option>
+                        </select>
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    Contact : <input type="text" name="contact">
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <form method=”post” action=”test.php” name=”myForm”>
+                        ชอบอะไร ชอบเราใช่ไหม : <br>
+                        <input type="checkbox" name="lang1" value="Sport" > Sport <br>
+                        <input type="checkbox" name="lang2" value="Dance" > Dance <br>
+                        <input type="checkbox" name="lang3" value="Cartoon" > Cartoon <br>
+                        <input type="checkbox" name="lang4" value="Game" > Game <br>
+                        <input type="checkbox" name="lang5" value="Music" > Music <br>
+                        <input type="checkbox" name="lang6" value="Program" > Program <br>
+                        <input type="checkbox" name="lang7" value="Yes" > Yes <br>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"> <textarea rows="5" cols="90" name = "details"> ความรู้สึก :</textarea></td>
+            </tr>
+        </table>
+        <input type="reset" value="เคลียร์">
+        <input type="submit" value="ส่ง">
+    </form> 
+</body>
+</html>
